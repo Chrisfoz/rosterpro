@@ -69,10 +69,6 @@ cp .env.example .env
 npm run dev
 ```
 
-## Deployment
-
-See [DEPLOYMENT.md](./docs/DEPLOYMENT.md) for detailed deployment instructions.
-
 ## Documentation
 
 - [Roster Rules](./docs/ROSTER_RULES.md)
