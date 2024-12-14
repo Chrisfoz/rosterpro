@@ -1,86 +1,84 @@
-# RosterPro
+# RosterPro - Church Service Management System
 
-An intelligent church roster management system designed to handle complex scheduling requirements across multiple services.
+## Project Overview
+A roster management system designed to handle complex church service scheduling requirements, with AI-assisted roster generation and rule validation.
 
-## 🎯 Project Overview
+## Core Features
 
-RosterPro is a specialized roster management solution developed to address the unique challenges of managing church service schedules. It aims to streamline the process of creating and managing rosters for multiple services while handling complex scheduling rules and role-specific requirements.
+### Phase 1: Rules & Initial Setup
+- [ ] Define and implement roster rules engine
+- [ ] AI-assisted rule suggestions based on existing roster patterns
+- [ ] Upload and analysis of existing rosters for pattern learning
+- [ ] Rule validation and confirmation system
 
-### Key Challenges Addressed
+### Phase 2: Roster Generation & Management
+- [ ] Generate rosters for 1-16 week periods
+- [ ] Real-time rule validation during roster editing
+- [ ] Rule violation flagging and suggestions
+- [ ] Roster finalization workflow
 
-- **Multi-Service Management**: Handles scheduling for multiple services (e.g., Italian and English) on the same day
-- **Complex Scheduling Rules**: Supports sophisticated scheduling rules and individual preferences
-- **Capacity Constraints**: Manages role-specific capacity limits and requirements
-- **Integration**: Streamlines workflows currently spread across Planning Center, Google Sheets, and Microsoft Word
+### Phase 3: Communication & Notifications
+- [ ] Automated PDF roster distribution via email
+- [ ] Weekly roster reminders
+- [ ] SMS shift reminders to individuals
+- [ ] Issue reporting system for roster concerns
 
-## 🚀 Features (Planned)
+### Phase 4: User Management & Monetization
+- [ ] User authentication system
+- [ ] Role-based access control
+- [ ] Guidance and documentation pages
+- [ ] Subscription management
+- [ ] Free trial system (one-time use before payment)
 
-- [ ] **Multi-Service Roster Management**
-  - Support for different service types (Italian/English)
-  - Concurrent service scheduling
-  - Service-specific role requirements
+## Technical Features
 
-- [ ] **Advanced Scheduling Engine**
-  - Custom scheduling rules and constraints
-  - Preference-based assignment
-  - Conflict detection and resolution
-  - Availability tracking
+### AI Integration
+- Intelligent roster pattern recognition
+- Rule suggestion based on historical data
+- Conflict detection and resolution
 
-- [ ] **Role Management**
-  - Role-specific capacity limits
-  - Skill requirements tracking
-  - Cross-service role compatibility
+### File Management
+- Support for existing roster uploads
+- PDF generation and distribution
+- Historical roster analysis
 
-- [ ] **Integration Capabilities**
-  - Planning Center integration
-  - Google Calendar sync
-  - Export to various formats
+### Communication
+- Email integration for roster distribution
+- SMS integration for reminders
+- Issue reporting and tracking
 
-- [ ] **User Interface**
-  - Intuitive roster creation and management
-  - Real-time availability updates
-  - Mobile-responsive design
+### Security & Access
+- Secure authentication
+- Role-based permissions
+- Data encryption
 
-## 🛠 Technical Stack (Proposed)
+## Getting Started
 
-- **Backend**: 
-  - Node.js/Express.js
-  - PostgreSQL for data storage
-  - Redis for caching
+```bash
+# Clone the repository
+git clone https://github.com/Chrisfoz/rosterpro.git
 
-- **Frontend**:
-  - React.js
-  - TailwindCSS
-  - React Query for state management
+# Install dependencies
+cd rosterpro
+npm install
 
-- **APIs & Integration**:
-  - Planning Center API
-  - Google Calendar API
-  - Custom REST API
+# Set up environment variables
+cp .env.example .env
 
-## 📋 Project Structure
-
+# Run development server
+npm run dev
 ```
-rosterpro/
-├── client/                 # Frontend React application
-├── server/                 # Backend Node.js application
-├── docs/                   # Documentation
-├── scripts/               # Utility scripts
-└── tests/                 # Test suites
-```
 
-## 🚦 Getting Started
+## Deployment
 
-*Coming soon*
+See [DEPLOYMENT.md](./docs/DEPLOYMENT.md) for detailed deployment instructions.
 
-## 📝 Contributing
+## Documentation
 
-Contributions are welcome! Please read our contributing guidelines to get started.
+- [Roster Rules](./docs/ROSTER_RULES.md)
+- [API Documentation](./docs/API.md)
+- [User Guide](./docs/USER_GUIDE.md)
 
-## 📄 License
+## License
 
-This project is licensed under the MIT License - see the LICENSE file for details.
-
-## 🤝 Support
-
-For support and queries, please open an issue in the repository.
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
